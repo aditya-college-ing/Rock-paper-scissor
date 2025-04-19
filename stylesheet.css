@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    
+    background-size: auto;
+}
+#textheading{
+    height: 67px;
+    width: auto;
+    text-align: center;
+    font-size: 27px;
+    font-family: fangsong;
+    font-weight: 100;
+}
+.select{
+    height: 236px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: center;
+}
+.rock:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.choice:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.scissor:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.score-board{
+    height: 100px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-size: x-large;
+    justify-content: center;
+    column-gap: 125px;
+}
+.msg-boxes{
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+#msg{
+   height: 50px;
+   width: 251px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 14px;
+   color: rgb(255, 249, 249);
+   background-color: black;
+}
