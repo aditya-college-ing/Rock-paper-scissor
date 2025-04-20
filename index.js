@@ -5,14 +5,13 @@ let choices = document.querySelectorAll(".choice");
 let msg = document.querySelector("#msg"); 
 let userscorepara = document.querySelector("#your-score");
 let computerscorepara = document.querySelector("#computer-score");
-//user choice
+
 choices.forEach((choice) =>{
     choice.addEventListener("click",() =>{
         let userchoice = choice.getAttribute("id");
         playgame(userchoice);
     })
 })
-// winner status
 const showwinner = (userwin, userchoice, computer) =>{
 if(userwin){
     userScore++;
@@ -26,7 +25,6 @@ if(userwin){
   msg.style.backgroundColor = "red";
  };
 };
-//running status
 const playgame = (userchoice) =>{
     console.log("user choice =",userchoice)
     const computer = computerchoice()
@@ -45,16 +43,13 @@ const playgame = (userchoice) =>{
         showwinner(userwin , userchoice, computer)
     }
 }
-//computer choice
 const computerchoice = () =>{
     const options = ["rock","paper","scissor"];
     const randomidx = Math.floor(Math.random()*3);
     return options[randomidx]
 }
-//Draw condition
 const DrawGame = () => {
     console.log("Match Was Draw");
     msg.innerText = "Match Draw";
     msg.style.backgroundColor = "yellow"
  }
-//END OF THIS CODE 
